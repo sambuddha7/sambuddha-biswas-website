@@ -50,6 +50,11 @@ hr {
   line-height: 1.5;
   margin-bottom: 7%;
 }
+@media (max-width: 1000px) {
+  .intro-p {
+    font-size: 2rem;
+  }
+}
 h1 {
   color:#37E5C2;
 }
