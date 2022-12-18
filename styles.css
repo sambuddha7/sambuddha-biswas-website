@@ -58,7 +58,9 @@ hr {
 h1 {
   color:#37E5C2;
 }
-
+.card {
+  box-shadow: 0 2px 5px 0 #808080;
+}
 .socials {
   margin: 5% 2%;
   color: #666666;
