@@ -22,6 +22,8 @@ function toNight() {
   $(".card-body").removeClass("light");
   $(".navbar").removeClass("navbar-light");
   $(".card").removeClass("light-card");
+  $(".image-container-h").removeClass("light");
+
 
   $("html").addClass("night");
   $(".navbar").addClass("night");
@@ -32,6 +34,7 @@ function toNight() {
   $("#highlights").addClass("night");
   $(".card-body").addClass("night");
   $(".card").addClass("night-card");
+  $(".image-container-h").addClass("night");
 
 
   $(".navbar").addClass("navbar-dark");
@@ -49,6 +52,7 @@ function toDay() {
   $("#projects").removeClass("night");
   $("#highlights").removeClass("night");
   $(".card-body").removeClass("night");
+  $(".image-container-h").removeClass("night");
   $(".navbar").removeClass("navbar-dark");
   $(".card").removeClass("night-card");
 
@@ -62,4 +66,5 @@ function toDay() {
   $(".card-body").addClass("light");
   $(".navbar").addClass("navbar-light");
   $(".card").addClass("light-card");
+  $(".image-container-h").addClass("light");
 }
