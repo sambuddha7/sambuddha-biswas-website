@@ -48,12 +48,26 @@ hr {
   padding: 5% 10%;
   text-align: center;
 }
-
 .dp {
   border-radius: 25px;
   width: 50%;
 }
+.glowing-link {
+  text-decoration: underline;
+  color: #ed7b61;
+  position: relative;
+  transition: all 0.2s ease-in-out;
 
+}
+.glowing-link:hover {
+  color: #E84A27;
+  background-color: #f5d3cb;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.glowing-link:hover::after {
+  transform: scaleX(1);
+}
 .intro-header {
   text-align: left;
   line-height: 1.5;
@@ -137,10 +151,10 @@ h1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-a {
+/* a {
   text-decoration: none;
   color: inherit;
-}
+} */
 
 /* highlights */
 #highlights {
@@ -296,4 +310,6 @@ a {
 }
 .test-img {
   width: 100%;
+}
+.first {
 }
