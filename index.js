@@ -1,4 +1,26 @@
+// fade section
+const fadeSections = document.querySelectorAll(".fade-in");
+fadeSections.forEach(section => {
+  const sectionTop = section.offsetTop;
+  const sectionBottom = sectionTop + section.offsetHeight;
 
+  // Add an event listener to the window's "scroll" event
+  window.addEventListener('scroll', () => {
+    const scrollPosition = window.pageYOffset + window.innerHeight;
+
+    // Check if the section is in view
+    if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
+      section.classList.add('visible');
+    }
+  });
+});
+// perspective section
+
+
+
+
+
+// dark mode section
 var lord = "light";
 $(".custom-control-input").click(function() {
   if (lord === "light") {
