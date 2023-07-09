@@ -14,25 +14,40 @@ fadeSections.forEach(section => {
     }
   });
 });
-// perspective section
 
 
-
-
+// darkmode checkbox
+const check = document.getElementById('customSwitches');
+var body = document.getElementById('html');
 
 // dark mode section
-var lord = "light";
+var currentMode = "dark";
 $(".custom-control-input").click(function() {
-  if (lord === "light") {
+  if (currentMode === "light") {
     toNight();
-  } else if (lord === "dark") {
+  } else if (currentMode === "dark") {
     toDay();
   }
+  var isDarkMode = body.classList.contains('night');
+  console.log(isDarkMode);
+  localStorage.setItem('darkMode', isDarkMode);
 });
+var isDarkMode = localStorage.getItem('darkMode');
+// console.log(isDarkMode);
+if (isDarkMode == 'true') {
+  toNight();
+  check.checked = true;
+} else {
+  toDay();
+  check.checked = false;
+
+
+}
+
 function toNight() {
   $(".fa-github").removeClass("fa-github-light");
   $(".fa-github").addClass("fa-github-dark");
-  lord = "dark";
+  currentMode = "dark";
 
   $("html").removeClass("light");
   $(".navbar").removeClass("light");
@@ -45,6 +60,8 @@ function toNight() {
   $(".navbar").removeClass("navbar-light");
   $(".card").removeClass("light-card");
   $(".image-container-h").removeClass("light");
+  $("#intro-2").removeClass("light");
+
 
 
   $("html").addClass("night");
@@ -56,6 +73,7 @@ function toNight() {
   $("#highlights").addClass("night");
   $(".card-body").addClass("night");
   $(".card").addClass("night-card");
+  $("#intro-2").addClass("night");
   $(".image-container-h").addClass("night");
 
 
@@ -65,7 +83,7 @@ function toDay() {
   $(".fa-github").removeClass("fa-github-dark");
   $(".fa-github").addClass("fa-github-light");
 
-  lord = "light";
+  currentMode = "light";
   $("html").removeClass("night");
   $(".navbar").removeClass("night");
   $(".row").removeClass("night");
@@ -77,6 +95,8 @@ function toDay() {
   $(".image-container-h").removeClass("night");
   $(".navbar").removeClass("navbar-dark");
   $(".card").removeClass("night-card");
+  $("#intro-2").removeClass("night");
+
 
   $("html").addClass("light");
   $(".navbar").addClass("light");
@@ -89,4 +109,6 @@ function toDay() {
   $(".navbar").addClass("navbar-light");
   $(".card").addClass("light-card");
   $(".image-container-h").addClass("light");
+  $("#intro-2").addClass("light");
+
 }

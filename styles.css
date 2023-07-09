@@ -52,14 +52,14 @@ hr {
   border-radius: 25px;
   width: 50%;
 }
-.glowing-link {
+.glowing-link-illini {
   text-decoration: underline;
   color: #ed7b61;
   position: relative;
   transition: all 0.2s ease-in-out;
 
 }
-.glowing-link:hover {
+.glowing-link-illini:hover {
   color: #E84A27;
   background-color: #f5d3cb;
   border-radius: 5px;
@@ -68,13 +68,74 @@ hr {
 .glowing-link:hover::after {
   transform: scaleX(1);
 }
+.glowing-link-saporai {
+  text-decoration: underline;
+  color: #7bd369;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+
+}
+.glowing-link-saporai:hover {
+  color: #3b6f30;
+  background-color: #defbd9;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.glowing-link-cadence {
+  text-decoration: underline;
+  color: #ff5858;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+
+}
+.glowing-link-cadence:hover {
+  color: #952424;
+  background-color: #fbadad;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.glowing-link-gamut {
+  text-decoration: underline;
+  color: #a66203;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+
+}
+.glowing-link-gamut:hover {
+  color: #512f01;
+  background-color: #ffc473;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.glowing-link-128 {
+  text-decoration: underline;
+  color: #056bd1;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+
+}
+.glowing-link-128:hover {
+  color: #04396e;
+  background-color: #5dacfc;
+  border-radius: 5px;
+  text-decoration: none;
+}
 .intro-header {
   text-align: left;
   line-height: 1.5;
   margin-bottom: 7%;
   animation: fadein 1.5s;
 }
-
+.intro-p {
+  text-align: left;
+}
+.intro-p-lg {
+  font-size: 1.2rem;
+}
+.exp-list {
+  text-align: left;
+  margin-bottom: 2%;
+}
 @media (max-width: 1000px) {
   .intro-p {
     font-size: 1.5rem;
@@ -297,7 +358,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  /* height: 400px; */
   overflow: hidden;
 }
 
@@ -325,6 +386,10 @@ h1 {
   animation: fadein 1.5s;
 }
 .first {
+  padding-top: 5%;
+}
+.last {
+  padding-bottom: 5%;
 }
 /* Set up the perspective container */
 .hover-perspective {

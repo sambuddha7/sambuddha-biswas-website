@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="night" id="html">
 
 <head>
   <meta charset="utf-8">
@@ -21,7 +21,7 @@
 <body>
   <!-- navbar stuff -->
 
-  <nav class="navbar navbar-expand-lg navbar-light light-nav">
+  <nav class="navbar navbar-expand-lg navbar-dark light-nav night">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,20 +44,34 @@
         </li>
       </ul>
       <span class="navbar-text custom-control custom-switch">
-        <input type="checkbox" class="custom-control-input" id="customSwitches">
-        <label class="custom-control-label" for="customSwitches">Dark Mode</label>
+        <input type="checkbox" class="custom-control-input" id="customSwitches" checked>
+        <label  class="custom-control-label" for="customSwitches" >Dark Mode</label>
       </span>
     </div>
   </nav>
 
   <!-- image stuff -->
-  <div class="image-container-h first ">
+  <div class="image-container-h first night">
     <div class="col-lg-3">
+      <img class="test-img" src="images/gym-fam.jpg"  alt="Second slide">
+
+    </div>
+    <div class="col-lg-3 ">
+        <img class="test-img" src="images/romeo.jpg" alt="First slide">
+    </div>
+
+    <div class="col-lg-3 col-md-12">
+      <img class="test-img" src="images/vangogh.jpg" alt="Third slide">
+    </div>
+
+  </div>
+  <div class="image-container-h night">
+    <div class="col-lg-3 ">
       <img class="test-img" src="images/miami1.jpg"  alt="Second slide">
 
     </div>
     <div class="col-lg-3">
-        <img class="test-img" src="images/miami2.jpg" alt="First slide">
+        <img class="test-img" src="images/miami2.jpg" height="350"alt="First slide">
     </div>
 
     <div class="col-lg-3">
@@ -66,13 +80,13 @@
 
   </div>
 
-  <div class="image-container-h">
+  <div class="image-container-h night" >
     <div class="col-lg-3">
-      <img class="test-img" src="images/BakeLab.JPG"  alt="Second slide">
+      <img class="test-img" src="images/BakeLab.JPG" height="400" alt="Second slide">
 
     </div>
     <div class="col-lg-3">
-        <img class="test-img" src="images/kams.png" alt="First slide">
+        <img class="test-img" src="images/kams.png" height="300"alt="First slide">
     </div>
 
     <div class="col-lg-3">
@@ -80,7 +94,7 @@
     </div>
 
   </div>
-  <div class="image-container-h">
+  <div class="image-container-h night last">
     <div class="col-lg-3">
         <img class="test-img" src="images/halloween.jpg" alt="First slide">
     </div>
@@ -94,9 +108,9 @@
 
   </div>
 
-  <footer id="footer">
+  <footer id="footer" class="night">
     <p>
-      ⓒ 2022 Sambuddha Biswas
+      ⓒ 2023 Sambuddha Biswas
     </p>
   </footer>
   <!-- jquery -->
