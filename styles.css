@@ -94,6 +94,19 @@ hr {
   border-radius: 5px;
   text-decoration: none;
 }
+.glowing-link-ccc {
+  text-decoration: underline;
+  color: #33d6ff;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+
+}
+.glowing-link-ccc:hover {
+  color: #00b8e6;
+  background-color: #ccebff;
+  border-radius: 5px;
+  text-decoration: none;
+}
 .glowing-link-gamut {
   text-decoration: underline;
   color: #a66203;
